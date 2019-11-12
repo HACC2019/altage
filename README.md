@@ -1,5 +1,5 @@
 # Recent Updates:
-3 R Scripts have been created thus far.
+4 R Scripts have been created thus far.
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -37,6 +37,12 @@ Key to understand the processed dataset:
 - Congestion is determined by an assumption made (as no relative information was provided by Hawaiian Electric) that each car takes a maximum of 7 minutes to set-up at charing station before the session starts and that if a car starts a session within 7 minutes of another car ending a session, they have been waiting in line to charge.
 - Therefore, the program looks for 3 cars in a row, where the time between two charge cycles (sessions) is less than 7 minutes and then indicates that there is congestion if those conditions are met, starting from the third car in line. The program then continues to indicate that there is congestion until a gap between charge cycles of over 7 minutes is found.
 - The users of the application will eventually be able to manipulate the classifying factors (time and number of cars) of this congestion program throuhg the front end of the Altage application.
+----------------------------------------------------------------------------------------------------------------------------
+
+4. 'altageEVStationPeakPower.R'
+
+- Determines the minimum amount of power needed at a station at any given point (peak power) by calculating the maximum power in each charge cycle given in the 'Power Data' provided by Hawaiian Electric.
+- Also provides the average of the peak power in every charge cycle to give Hawaiian electric the freedom to determine the minimum power needed at a charge station, in that manner. 
 -----------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
 
